@@ -1,0 +1,10 @@
+<h1>All PNMs</h1>
+{% if allPNMs %}
+    <ul>
+    {% for PNM in allPNMs %}
+        <li><a href="/pnm/{{ PNM.id }}/">{{ PNM.id }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No pnms are available.</p>
+{% endif %}
