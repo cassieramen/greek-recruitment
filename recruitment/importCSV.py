@@ -14,20 +14,34 @@ def importCSV(filePath):
 		items = []
 		for row in reader:
 			year = 1 #They are freshman
-			if row[2] == 'S' or row[2] == 's':
+			if row[16] == 'Sophomore' or row[16] == 'sophomore':
 				year = 2
+			#prep zipcode
+			zip = row[13][:5]
+			if zip.isdigit():
+				zip = int(zip)
+			else:
+				zip = 0
 			#a -1 indicates the information doesn't exist
-			pnm = PNM(firstName=row[0],
-							lastName = row[1],
-							year = year,
-							facebookScore = row[3] if row[3] else -1,
-							preselectScore = row[4] if row[4] else -1,
-							setOneScore = row[5] if row[5] else -1,
-							setTwoScore = row[6] if row[6] else -1,
-							setThreeScore = row[7] if row[7] else -1,
-							setFourScore = row[8] if row[8] else -1,
-							setReleased = row[9] if row[9] else -1,
-							)
+			pnm = PNM(	firstName=row[4],
+						lastName = row[3],
+						year = year,
+						country = row[8],
+						address = row[9],
+						city = row[11],
+						state= row[12],
+						zip = zip,
+						highSchool = row[14],
+						major = row[17],
+						dorm = row[19],
+						facebookScore = row[24] if row[24] else -1,
+						preselectScore = row[25] if row[25] else -1,
+						setOneScore = row[27] if row[27] else -1,
+						setTwoScore = row[28] if row[28] else -1,
+						setThreeScore = row[29] if row[29] else -1,
+						setFourScore = row[30] if row[30] else -1,
+						setReleased = -1,
+					)
 			pnm.save()
 		data.close()
 		print 'Successfully added the data'
