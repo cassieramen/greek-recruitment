@@ -22,11 +22,17 @@ def computeBaseline():
 	setFourPnms = getPnmsForSet(3,setThreePnms)
 	setThreeAccuracy, setThreeCuts = getSetAccuracy(setThreePnms, setFourPnms)
 
+	setFivePnms = getPnmsForSet(4,setFourPnms)
+	setFourAccuracy, setFourCuts = getSetAccuracy(setFourPnms, setFivePnms)
+
+	print setFourAccuracy
+	
 	b = open('baseline.csv', 'w')
 	a = csv.writer(b)
 	data = [setOneCuts,\
 	        setTwoCuts,\
-	        setThreeCuts]
+	        setThreeCuts,\
+	        setFourCuts]
 	a.writerows(data)
 	b.close()
 
