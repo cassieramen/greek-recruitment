@@ -1,0 +1,83 @@
+@font-face {
+	font-family: penelope;
+	src: url('PenelopeAnne.ttf');
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: isabelle;
+	src: url('Isabelle Layne.ttf');
+	font-weight: 100;
+}
+
+body {
+	font-family: penelope, Helvetica;
+	background-color: black;
+	color:white;
+	font-size: 35px;
+	width:1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+a {
+	text-decoration: none;
+	color:white;
+}
+
+#navigation {
+	margin-left: auto;
+	margin-right: auto;
+	width:1100px;
+}
+
+#navigation ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+
+#navigation ul li {
+	list-style-type: none;
+	display: inline;
+	text-decoration: none;
+	padding: 10px;
+	border: 1px solid white;
+	float:left;
+}
+
+#navigation ul li:hover {
+  	background-color:#787878;
+}
+
+#header {
+	padding-top: 10px;
+}
+
+#name {
+	font-size: 40px;
+	line-height: 0px;
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+#title {
+	font-size: 70px;
+	color:white;
+}
+
+#info {
+	color:#3399FF;
+}
+
+#names {
+	text-transform:none;
+	color:#787878;
+}
+
+#content {
+	margin-top: 30px;
+	padding:5px;
+	border: 1px solid white;
+}

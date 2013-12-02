@@ -19,6 +19,8 @@ class PNM(models.Model):
   setThreeScore = models.IntegerField()
   setFourScore = models.IntegerField()
   setReleased = models.IntegerField() #If current member, assign 5
+  income = models.IntegerField()
+
 
   def __unicode__(self):
     return str(self.id)
