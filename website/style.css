@@ -11,10 +11,10 @@
 }
 
 body {
-	font-family: penelope, Helvetica;
-	background-color: black;
-	color:white;
-	font-size: 35px;
+	font-family: Helvetica;
+	background-color:#E0E0E0 ;
+	color:black;
+	font-size: 20px;
 	width:1200px;
 	margin-right: auto;
 	margin-left: auto;
@@ -22,13 +22,13 @@ body {
 
 a {
 	text-decoration: none;
-	color:white;
+	color:#520063;
 }
 
 #navigation {
 	margin-left: auto;
 	margin-right: auto;
-	width:1100px;
+	width:900px;
 }
 
 #navigation ul {
@@ -48,7 +48,7 @@ a {
 }
 
 #navigation ul li:hover {
-  	background-color:#787878;
+  	background-color:white;
 }
 
 #header {
@@ -56,24 +56,22 @@ a {
 }
 
 #name {
-	font-size: 40px;
+	font-size: 25px;
 	line-height: 0px;
 	text-transform: uppercase;
 	display: inline-block;
 }
 
 #title {
-	font-size: 70px;
-	color:white;
+	font-size: 35px;
 }
 
 #info {
-	color:#3399FF;
+	color:#520063;
 }
 
 #names {
 	text-transform:none;
-	color:#787878;
 }
 
 #content {
